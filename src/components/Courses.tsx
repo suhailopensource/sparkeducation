@@ -10,6 +10,7 @@ const courses = [
     level: 'Intermediate',
     status: 'Active',
     description: 'Learn the basics of HTML, CSS, and JavaScript.',
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform"
   },
   {
     title: 'Advanced React Development',
@@ -47,8 +48,16 @@ const CourseCard = ({ course }: { course: any }) => (
     <p className="text-gray-600 mb-4">{course.description}</p>
     <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
       {
+        course?.link ? (
 
-        " Enroll Now"
+          <a href={course.link} target='_blank'>
+            Enroll Now
+          </a>
+        ) : (
+          <div >
+            Coming Soon! Stay Tuned.
+          </div>
+        )
       }
     </button>
   </div>

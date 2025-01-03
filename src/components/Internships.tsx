@@ -7,6 +7,7 @@ const internships = [
     duration: '3 months',
     location: 'Remote',
     description: 'Work on real-world projects using React and modern web technologies.',
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform"
   },
   {
     title: 'Backend Developer Intern',
@@ -37,7 +38,18 @@ const InternshipCard = ({ internship }: { internship: any }) => (
     </div>
     <p className="text-gray-600 mb-4">{internship.description}</p>
     <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
-      Apply Now
+      {
+        internship.link ? (
+
+          <a href={internship.link} target='_blank'>
+            Apply Now
+          </a>
+        ) : (
+          <div >
+            Coming Soon! Stay Tuned.
+          </div>
+        )
+      }
     </button>
   </div>
 );

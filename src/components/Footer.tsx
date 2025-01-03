@@ -27,26 +27,27 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Learning Street</li>
-              <li>Education City, EC 12345</li>
-              <li>contact@sparkeducation.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>Vandalur , Chennai</li>
+
+              <li>sparkwebservices2022@gmail.com</li>
+              <li>+91 98416 06914</li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
+
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-6 w-6" />
+                <a href='https://www.linkedin.com/company/sparkservice/' target='_blank'  >
+
+                  <Linkedin className="h-6 w-6" />
+                </a>
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-6 w-6" />
+                <a href='https://www.instagram.com/spark.solutions.24?igsh=eWQ4ajBsOGx3YzI5' target='_blank'>
+
+                  <Instagram className="h-6 w-6" />
+                </a>
               </a>
             </div>
           </div>

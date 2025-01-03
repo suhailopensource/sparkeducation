@@ -13,7 +13,10 @@ const Hero = () => {
             Join Spark Education to unlock your potential and embark on a journey of continuous learning and growth.
           </p>
           <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
-            Get Started
+            <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform" className=''>
+
+              Get Started
+            </a>
           </button>
         </div>
       </div>

@@ -12,21 +12,21 @@ const Contact = () => {
               <Mail className="w-6 h-6 text-blue-600 mt-1" />
               <div className="ml-4">
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p className="text-gray-600">contact@sparkeducation.com</p>
+                <p className="text-gray-600">sparkwebservices2022@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start">
               <Phone className="w-6 h-6 text-blue-600 mt-1" />
               <div className="ml-4">
                 <h3 className="text-lg font-semibold">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+91 98416 06914</p>
               </div>
             </div>
             <div className="flex items-start">
               <MapPin className="w-6 h-6 text-blue-600 mt-1" />
               <div className="ml-4">
                 <h3 className="text-lg font-semibold">Address</h3>
-                <p className="text-gray-600">123 Learning Street, Education City, EC 12345</p>
+                <p className="text-gray-600">Vandalur, Chennai</p>
               </div>
             </div>
           </div>
