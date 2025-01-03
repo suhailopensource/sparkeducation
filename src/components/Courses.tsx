@@ -10,7 +10,8 @@ const courses = [
     level: 'Intermediate',
     status: 'Active',
     description: 'Learn the basics of HTML, CSS, and JavaScript.',
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform",
+    curriculum: "https://drive.google.com/file/d/11wnFU6bbkmd2vmesdh8B6d_wFk1MkIqc/view?usp=drivesdk"
   },
   {
     title: 'Advanced React Development',
@@ -60,6 +61,23 @@ const CourseCard = ({ course }: { course: any }) => (
         )
       }
     </button>
+    {
+      course?.curriculum &&
+      <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors mt-2">
+        {
+          course?.curriculum ? (
+
+            <a href={course?.curriculum} target='_blank'>
+              Course Curriculum
+            </a>
+          ) : (
+            <div >
+              Coming Soon! Stay Tuned.
+            </div>
+          )
+        }
+      </button>
+    }
   </div>
 );
 
