@@ -6,7 +6,6 @@ import { SiStatuspal } from "react-icons/si";
 const courses = [
   {
     title: 'Web Development Fundamentals',
-<<<<<<< HEAD
     duration: '25 days - Batch Starts on 15th march',
     level: 'Intermediate',
     status: 'Active',
@@ -31,28 +30,6 @@ const courses = [
     description: 'Dive into the future of Artificial Intelligence – explore Agentic AI and build cutting-edge solutions in this high-impact bootcamp.',
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeaL_4B12AA1RMYx9V3206_d8al8Dl6J1Y0C6bejoK1ovsmiQ/viewform",
     curriculum: "https://drive.google.com/file/d/1oUvjknl7PlHv1fmrr-s4Y3cvM3DzRQ07/view?usp=sharing"
-=======
-    duration: '10 days',
-    level: 'Intermediate',
-    status: 'Active',
-    description: 'Learn the basics of HTML, CSS, and JavaScript.',
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSebla7mH8QSy87BcwNPt0LivukMuENjGjFkJ7JU5Fy9Bd9YiQ/viewform",
-    curriculum: "https://drive.google.com/file/d/11wnFU6bbkmd2vmesdh8B6d_wFk1MkIqc/view?usp=drivesdk"
-  },
-  {
-    title: 'Advanced React Development',
-    duration: '3 weeks',
-    level: 'Intermediate',
-    status: 'Coming Soon',
-    description: 'Master React.js and modern frontend development.',
-  },
-  {
-    title: 'Full Stack Development',
-    duration: '5 weeks',
-    level: 'Advanced',
-    status: 'Coming Soon',
-    description: 'Build complete web applications from frontend to backend.',
->>>>>>> 70bfa5dae929187ebbfa831d408b2a47f97fd51e
   },
 ];
 
@@ -74,7 +51,6 @@ const CourseCard = ({ course }: { course: any }) => (
       </div>
     </div>
     <p className="text-gray-600 mb-4">{course.description}</p>
-<<<<<<< HEAD
 
     {
       course?.link ? (
@@ -98,38 +74,6 @@ const CourseCard = ({ course }: { course: any }) => (
           </button>
         </a>
       )
-=======
-    <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
-      {
-        course?.link ? (
-
-          <a href={course.link} target='_blank'>
-            Enroll Now
-          </a>
-        ) : (
-          <div >
-            Coming Soon! Stay Tuned.
-          </div>
-        )
-      }
-    </button>
-    {
-      course?.curriculum &&
-      <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors mt-2">
-        {
-          course?.curriculum ? (
-
-            <a href={course?.curriculum} target='_blank'>
-              Course Curriculum
-            </a>
-          ) : (
-            <div >
-              Coming Soon! Stay Tuned.
-            </div>
-          )
-        }
-      </button>
->>>>>>> 70bfa5dae929187ebbfa831d408b2a47f97fd51e
     }
   </div>
 );
